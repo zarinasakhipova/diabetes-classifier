@@ -64,4 +64,6 @@ To run the notebook:
 
 ```bash
 pip install -r requirements.txt
+export PATH=$PATH:/Users/zsakhipo/Library/Python/3.9/bin
+jupyter notebook
 jupyter notebook notebooks/diabetes_classifier.ipynb
