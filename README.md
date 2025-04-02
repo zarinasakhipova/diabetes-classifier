@@ -35,6 +35,7 @@ Train a machine learning classifier to accurately predict diabetes status and ge
 
 ## 📁 Project Structure
 
+```bash
 diabetes-classification-project/
 │
 ├── notebooks/
@@ -48,7 +49,7 @@ diabetes-classification-project/
 ├── README.md                            # Project description and instructions
 ├── requirements.txt                     # List of required Python packages
 └── .gitignore                           # Specifies which files to exclude from version control
-
+```
 
 ## ✅ Submission Format
 
