@@ -27,7 +27,7 @@ Train a machine learning classifier to accurately predict diabetes status and ge
 - Data loading and cleaning
 - Exploratory Data Analysis (EDA)
 - Feature encoding and scaling
-- Model selection and training (RandomForest, XGBoost, etc.)
+- Model selection and training (RandomForest)
 - Hyperparameter tuning
 - Evaluation (accuracy, precision, recall)
 - Prediction on test data
@@ -51,9 +51,25 @@ diabetes-classification-project/
 └── .gitignore                           # Specifies which files to exclude from version control
 ```
 
+## Model Performance 
+![Model Performaance](images/model_performance.jpg)
+
+The model used for this Diabetes Classifier project was a Random Forest Classifier, trained on preprocessed patient data. It achieved an accuracy of 96.8% on the test set, showing excellent overall performance.
+
+The results show:
+- High precision and F1-score for non-diabetic patients, meaning the model is very accurate when predicting that a person does not have diabetes.
+- Slightly lower recall for diabetic patients, which indicates the model missed some true positive cases — a common trade-off in imbalanced medical datasets.
+- Despite this, the model maintains a strong overall balance, with a macro F1-score of 0.89 and a weighted F1-score of 0.97, making it reliable for practical use.
+
+These results were achieved through:
+- Careful preprocessing (label encoding, scaling)
+- Splitting data into training and testing sets
+- Training a well-tuned Random Forest model
+The model is now capable of making confident predictions on new, unseen patients.
+
 ## ✅ Submission Format
 
-The final submission must be in `.csv` format with two columns:
+The final submission is in `.csv` format with two columns:
 - `ID`
 - `prediction` — a **class label** (0 or 1), not probability
 
